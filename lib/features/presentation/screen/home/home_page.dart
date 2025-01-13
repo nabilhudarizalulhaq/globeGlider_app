@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:globe_glider_app/features/presentation/screen/home/widget/carosel_slider.dart';
 import 'package:globe_glider_app/features/presentation/screen/home/widget/popular_hotel.dart';
+import 'package:globe_glider_app/features/presentation/screen/home/widget/recomended.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
@@ -74,6 +75,9 @@ class _HomePageState extends State<HomePage> {
           caroselSlider(),
           const SizedBox(height: 16.0),
           popularHotels(),
+          const SizedBox(height: 16.0),
+          recomenndeHotels(),
+          const SizedBox(height: 50.0),
         ],
       ),
     );

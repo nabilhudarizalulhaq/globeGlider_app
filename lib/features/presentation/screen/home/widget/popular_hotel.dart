@@ -50,13 +50,23 @@ Widget popularHotels() {
             Spacer(),
             TextButton(
               onPressed: () {},
-              child: Text(
-                'View all',
-                style: TextStyle(
-                  color: Color(0xFF163C9F),
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: Row(
+                children: [
+                  Text(
+                    'View all',
+                    style: TextStyle(
+                      color: Color(0xFF163C9F),
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(width: 8.0),
+                  Image.asset(
+                    'assets/images/icon_more.png',
+                    width: 16,
+                    height: 16,
+                  ),
+                ],
               ),
             ),
           ],
@@ -82,19 +92,6 @@ Widget popularHotels() {
                 ),
                 child: Column(
                   children: [
-                    // Container(
-                    //   height: 120,
-                    //   decoration: BoxDecoration(
-                    //     borderRadius: BorderRadius.only(
-                    //       topLeft: Radius.circular(16),
-                    //       topRight: Radius.circular(16),
-                    //     ),
-                    //     image: DecorationImage(
-                    //       image: AssetImage('assets/onboarding1.png'),
-                    //       fit: BoxFit.cover,
-                    //     ),
-                    //   ),
-                    // ),
                     Padding(
                       padding: const EdgeInsets.only(
                         left: 16,
@@ -115,12 +112,21 @@ Widget popularHotels() {
                             ),
                           ),
                           const SizedBox(height: 8.0),
-                          Text(
-                            'Location 1',
-                            style: TextStyle(
-                              color: Color(0xFFFFFFFF),
-                              fontSize: 12,
-                            ),
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.location_on_outlined,
+                                color: Color(0xFFFFFFFF),
+                                size: 16,
+                              ),
+                              Text(
+                                'Location 1',
+                                style: TextStyle(
+                                  color: Color(0xFFFFFFFF),
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ],
                           ),
                         ],
                       ),
