@@ -17,6 +17,43 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        unselectedItemColor: Color(0xFF8189B0),
+        selectedItemColor: Color(0xFF163C9F),
+        iconSize: 28,
+        currentIndex: widget.currentIndex,
+        onTap: (index) {
+          setState(() {
+            widget.currentIndex = index;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.notifications_none_rounded,
+              size: 28,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_outline),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_filled),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.image_rounded),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.stream_rounded),
+            label: '',
+          ),
+        ],
+      ),
       body: ListView(
         children: [
           Padding(
