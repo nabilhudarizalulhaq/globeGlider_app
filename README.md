@@ -1,6 +1,8 @@
 # globe_glider_app
 
-A new Flutter project.
+slicing UI/UX from figma 
+https://www.figma.com/design/L1pMlxQLUqJdAYMATWWGTA/GlobeGlider---Travel-App-Booking-Mobile-UI-Kit-%5BFree%5D-(Community)?node-id=106-990&t=syvg8MbZ7msQnywu-0
+
 
 ## Getting Started
 
