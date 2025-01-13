@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:globe_glider_app/features/presentation/screen/home/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -13,13 +14,7 @@ class LoginPage extends StatelessWidget {
           Center(
             child: Container(
               margin: EdgeInsets.only(top: 82),
-              child: Text(
-                'Login Page',
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold
-                ),
-              ),
+              child: Image.asset('assets/icon.png')
             ),
             ),
             const SizedBox(height: 64.0),
@@ -149,12 +144,21 @@ class LoginPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
               ),
               child: Center(
-                child: Text(
-                  'Login',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                      (route) => false,
+                    );
+                  },
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ),
