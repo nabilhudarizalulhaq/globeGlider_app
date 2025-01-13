@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:globe_glider_app/features/presentation/screen/home/widget/carosel_slider.dart';
+import 'package:globe_glider_app/features/presentation/screen/home/widget/popular_hotel.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
@@ -70,59 +71,9 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           const SizedBox(height: 16.0),
-          caroselSlider()
-          // ListView(
-          //   children: [
-          //     Container(
-          //       margin: EdgeInsets.symmetric(horizontal: 24),
-          //       height: 160,
-          //       decoration: BoxDecoration(
-          //         // color: Color(0xFF1C2D57),
-          //         color: Colors.green,
-          //         borderRadius: BorderRadius.circular(20),
-          //       ),
-          //       child: Image.asset(
-          //         'assets/images/images1.png',
-          //         fit: BoxFit.fill,
-          //       ),
-          //     ),
-          //     const SizedBox(
-          //       width: 12,
-          //     ),
-          // Container(
-          //   margin: EdgeInsets.symmetric(horizontal: 24),
-          //   height: 160,
-          //   decoration: BoxDecoration(
-          //     // color: Color(0xFF1C2D57),
-          //     color: Colors.green,
-          //     borderRadius: BorderRadius.circular(20),
-          //   ),
-          //   child: Image.asset(
-          //     'assets/images/images1.png',
-          //     fit: BoxFit.fill,
-          //   ),
-          //       // child: CarouselSlider(
-          //       //   items: [
-          //       //     Image.asset('assets/images/1.png'),
-          //       //     Image.asset('assets/images/2.png'),
-          //       //     Image.asset('name'),
-          //       //   ],
-          //       //   options: CarouselOptions(
-          //       //     height: 160,
-          //       //     aspectRatio: 16 / 9,
-          //       //     viewportFraction: 1,
-          //       //     enableInfiniteScroll: false,
-          //       //     onPageChanged: ((index, reason) {
-          //       //       setState(() {
-          //       //         // currentIndex = index;
-          //       //       });
-          //       //     }),
-          //       //   ),
-          //       //   // carouselController: carouselController,
-          //       // ),
-          //     ),
-          //   ],
-          // ),
+          caroselSlider(),
+          const SizedBox(height: 16.0),
+          popularHotels(),
         ],
       ),
     );
