@@ -1,6 +1,7 @@
 # globe_glider_app
 
-slicing UI/UX from figma 
+slicin![Thumbnail](https://github.com/user-attachments/assets/daacbd2a-0ecb-46c6-a770-1baed336e3fd)
+g UI/UX from figma 
 https://www.figma.com/design/L1pMlxQLUqJdAYMATWWGTA/GlobeGlider---Travel-App-Booking-Mobile-UI-Kit-%5BFree%5D-(Community)?node-id=106-990&t=syvg8MbZ7msQnywu-0
 
 
